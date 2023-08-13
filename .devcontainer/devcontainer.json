@@ -31,11 +31,15 @@
 		"-c",
 		"cd \"$(rustc --print sysroot)/lib/rustlib/src/rust\" && ln -s ./src ./library"
 	],
-	"postStartCommand": "rustup show"
+	"postStartCommand": "rustup show",
 
 	// Configure tool-specific properties.
 	// "customizations": {}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
+
+	"containerEnv": {
+		"CARGO_BUILD_TARGET_DIR": "/tmp/rust-target"
+	}
 }
