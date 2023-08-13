@@ -26,11 +26,15 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "rustup show"
+	"postCreateCommand": [
+		"sh",
+		"-c",
+		"cd \"$(rustc --print sysroot)/lib/rustlib/src/rust\" && ln -s ./src ./library"
+	],
+	"postStartCommand": "rustup show"
 
 	// Configure tool-specific properties.
 	// "customizations": {}
-
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
