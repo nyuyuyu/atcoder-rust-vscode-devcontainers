@@ -3,7 +3,9 @@
 {
 	"name": "AtCoder-Rust-1.42",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:bookworm",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 
 	// Use 'mounts' to make the cargo cache persistent in a Docker Volume.
 	// "mounts": [
