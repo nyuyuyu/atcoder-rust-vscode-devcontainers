@@ -1,5 +1,8 @@
 {
     "rust-analyzer.diagnostics.disabled": [
         "unresolved-proc-macro"
-    ]
+    ],
+    "terminal.integrated.env.linux": {
+        "PATH": "${workspaceFolder}/bin:${env:PATH}"
+    }
 }

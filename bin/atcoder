@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+CARGO_COMPETE_SUBCOMMAND="$1"
+case "$CARGO_COMPETE_SUBCOMMAND" in
+    'init' | 'login' | 'participate')
+        shift
+        cargo compete "$CARGO_COMPETE_SUBCOMMAND" atcoder "$@"
+        ;;
+    *)
+        cargo compete "$@"
+        ;;
+esac
