@@ -32,5 +32,3 @@ $ atcoder test
 # Submit your code
 $ atcoder submit
 ```
-
-[The cookies and tokens for cargo-compete](https://github.com/qryxip/cargo-compete/blob/master/README.md#cookies-and-tokens) are stored under `/mnt/xdg-data-home` in container. since it is Docker named volume, so it is not volatile even if the Dev Container is rebuilt.
