@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+#
+# Store `cargo-compete` credentials under your workspace folder
+#   ref: https://github.com/qryxip/cargo-compete#cookies-and-tokens
+#
+export XDG_DATA_HOME="$(cd $(dirname $0) && cd ../ && pwd)/.local/share"
+
 CARGO_COMPETE_SUBCOMMAND="$1"
 case "$CARGO_COMPETE_SUBCOMMAND" in
     'init' | 'login' | 'participate')
