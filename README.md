@@ -32,3 +32,7 @@ $ atcoder test
 # Submit your code
 $ atcoder submit
 ```
+
+`atcoder` command stores [the credentials used by cargo-compete](https://github.com/qryxip/cargo-compete/blob/master/README.md#cookies-and-tokens) under your workspace.
+
+Specifically, set `XDG_DATA_HOME` to your workspace root.
