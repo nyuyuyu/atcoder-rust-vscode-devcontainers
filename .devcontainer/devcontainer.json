@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/rust
 {
-	"name": "AtCoder-Rust-1.42",
+	"name": "AtCoder-Rust-1.70.0",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build": {
 		"dockerfile": "Dockerfile"
@@ -19,7 +19,7 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
-			"version": "1.42",
+			"version": "1.70.0",
 			"profile": "default"
 		}
 	},
@@ -28,11 +28,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": [
-		"sh",
-		"-c",
-		"cd \"$(rustc --print sysroot)/lib/rustlib/src/rust\" && ln -s ./src ./library"
-	],
+	// "postCreateCommand": {},
 	"postStartCommand": "rustup show",
 
 	// Configure tool-specific properties.
