@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -eu
+set -e
 
 __ATCODER_WORKSPACE_DIR="$(cd $(dirname $0) && cd ../ && pwd)"
 
