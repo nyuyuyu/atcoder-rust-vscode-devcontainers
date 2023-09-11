@@ -1,5 +1,16 @@
 {
     "terminal.integrated.env.linux": {
         "PATH": "${workspaceFolder}/bin:${env:PATH}"
+    },
+    "terminal.integrated.defaultProfile.linux": "bash",
+    "terminal.integrated.profiles.linux": {
+        "bash": {
+            "path": "bash",
+            "env": {
+                "HISTFILE": "${workspaceFolder}/.bash_history",
+            },
+            "icon": "terminal-bash",
+            "overrideName": true
+        }
     }
 }
