@@ -12,11 +12,11 @@ export XDG_DATA_HOME="$__ATCODER_WORKSPACE_DIR/.local/share"
 
 CARGO_COMPETE_SUBCOMMAND="$1"
 case "$CARGO_COMPETE_SUBCOMMAND" in
-    'init' | 'login' | 'participate')
+    'init' | 'i' | 'login' | 'l' | 'participate' | 'p')
         shift
         cargo compete "$CARGO_COMPETE_SUBCOMMAND" atcoder "$@"
         ;;
-    'new')
+    'new' | 'n')
         cargo compete "$@"
 
         #
