@@ -10,6 +10,12 @@ __ATCODER_WORKSPACE_DIR="$(cd $(dirname $0) && cd ../ && pwd)"
 #
 export XDG_DATA_HOME="$__ATCODER_WORKSPACE_DIR/.local/share"
 
+#
+# Store platform tests under your workspace folder
+# This behavior is undocumented :(
+#
+export XDG_CACHE_HOME="$__ATCODER_WORKSPACE_DIR/.cache"
+
 CARGO_COMPETE_SUBCOMMAND="$1"
 case "$CARGO_COMPETE_SUBCOMMAND" in
     'init' | 'i' | 'login' | 'l' | 'participate' | 'p')
