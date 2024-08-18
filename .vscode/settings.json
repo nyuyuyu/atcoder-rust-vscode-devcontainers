@@ -1,4 +1,20 @@
 {
+    "rust-analyzer.cargo.buildScripts.overrideCommand": [
+        "cargo",
+        "check",
+        "--quiet",
+        "--workspace",
+        "--message-format=json-diagnostic-rendered-ansi",
+        "--all-targets"
+    ],
+    "rust-analyzer.check.overrideCommand": [
+        "cargo",
+        "check",
+        "--quiet",
+        "--workspace",
+        "--message-format=json-diagnostic-rendered-ansi",
+        "--all-targets"
+    ],
     "terminal.integrated.env.linux": {
         "PATH": "${workspaceFolder}/bin:${env:PATH}"
     },
