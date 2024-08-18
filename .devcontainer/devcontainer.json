@@ -28,7 +28,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": {},
+	"postCreateCommand": "rustup component add rust-analyzer",
 	"postStartCommand": "rustup show",
 
 	// Configure tool-specific properties.
