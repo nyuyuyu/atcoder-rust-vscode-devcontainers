@@ -32,7 +32,15 @@
 	"postStartCommand": "rustup show",
 
 	// Configure tool-specific properties.
-	// "customizations": {}
+	"customizations": {
+		"vscode": {
+				"extensions": [
+						"rust-lang.rust-analyzer",
+						"tamasfe.even-better-toml",
+						"vadimcn.vscode-lldb"
+				]
+		}
+},
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
