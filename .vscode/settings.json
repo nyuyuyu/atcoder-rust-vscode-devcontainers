@@ -31,5 +31,16 @@
             "icon": "terminal-bash",
             "overrideName": true
         }
-    }
+    },
+
+    // Disable Github Copilot
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+
+    // Disable Github Copilot Chat
+    "chat.agent.enabled": false
 }
