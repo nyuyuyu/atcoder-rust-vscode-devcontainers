@@ -14,6 +14,9 @@ In Dev Container environment you can use `atcoder` command. this is a thin-wrapp
 
 It is used as follows.
 
+> [!NOTE]
+> Subcommands that require authentication(e.g. `login` / `submit`) have not worked since about May 2025.
+
 ```console
 # Login to AtCoder
 atcoder login
