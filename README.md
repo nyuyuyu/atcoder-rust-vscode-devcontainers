@@ -15,9 +15,6 @@ In Dev Container environment you can use `atcoder` command. this is a thin-wrapp
 It is used as follows.
 
 ```console
-# Initialize
-atcoder init
-
 # Login to AtCoder
 atcoder login
 
