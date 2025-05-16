@@ -8,7 +8,7 @@ Template for VS Code Dev Containers to try [AtCoder](https://atcoder.jp/) in Rus
 > [!WARNING]
 > VS Code v1.85 and above [may automatically install the GitHub Copilot extensions](https://github.com/microsoft/vscode-docs/blob/main/remote-release-notes/v1_85.md#automatically-install-the-github-copilot-and-pull-requests-extensions) to your Dev Container.
 >
-> [Some contests prohibit the use of generated AI](https://info.atcoder.jp/entry/llm-rules-en), so it is recommended to disable these extensions. Disabling the extensions is required each time you build the Dev Container.
+> [Some contests prohibit the use of generative AI](https://info.atcoder.jp/entry/llm-rules-en), so it is recommended to disable these extensions. Disabling the extensions is required each time you build the Dev Container.
 
 In Dev Container environment you can use `atcoder` command. this is a thin-wrapper around the [cargo-compete](https://github.com/qryxip/cargo-compete) command that is specific to AtCoder.
 
