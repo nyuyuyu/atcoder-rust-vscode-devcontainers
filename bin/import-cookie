@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+#
+# Argument:
+# $1 ... REVEL_SESSION value
+#
+
+import_cookie_usage() {
+    echo "Usage: `basename $0` [REVEL_SESSION value]"
+}
+
+if [ -z "$1" ]; then
+    import_cookie_usage
+    exit 1
+fi
+
+set -euo pipefail
+
+__ATCODER_WORKSPACE_DIR="$(cd $(dirname $0) && cd ../ && pwd)"
+
+#
+# Store `cargo-compete` credentials under your workspace folder
+#   ref: https://github.com/qryxip/cargo-compete#cookies-and-tokens
+#
+export XDG_DATA_HOME="$__ATCODER_WORKSPACE_DIR/.local/share"
+
+IMPORT_COOKIE_REVEL_SESSION_VALUE="$1"
+IMPORT_COOKIE_EXPIRES_UTC=`date --utc -d '180 days' '+%Y-%m-%dT%H:%M:%S'`Z
+IMPORT_COOKIE_EXPORT_DIR="$XDG_DATA_HOME/cargo-compete"
+
+mkdir -p "$IMPORT_COOKIE_EXPORT_DIR"
+echo \{\"raw_cookie\":\"REVEL_SESSION=$IMPORT_COOKIE_REVEL_SESSION_VALUE\; HttpOnly\; Secure\",\"path\":[\"/\",true],\"domain\":{\"HostOnly\":\"atcoder.jp\"},\"expires\":{\"AtUtc\":\"$IMPORT_COOKIE_EXPIRES_UTC\"}\} > "$IMPORT_COOKIE_EXPORT_DIR/cookies.jsonl"
