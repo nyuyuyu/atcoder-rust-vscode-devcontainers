@@ -10,7 +10,7 @@ Template for VS Code Dev Containers to try [AtCoder](https://atcoder.jp/) in Rus
 >
 > [Some contests prohibit the use of generative AI](https://info.atcoder.jp/entry/llm-rules-en), so it is recommended to disable these extensions. Disabling the extensions is required each time you build the Dev Container.
 
-In Dev Container environment you can use `atcoder` command. this is a thin-wrapper around the [cargo-compete](https://github.com/qryxip/cargo-compete) command that is specific to AtCoder.
+In Dev Container environment you can use `atcoder` command(`a` and `ac` is alias). this is a thin-wrapper around the [cargo-compete](https://github.com/qryxip/cargo-compete) command that is specific to AtCoder.
 
 It is used as follows.
 
