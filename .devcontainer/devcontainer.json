@@ -1,7 +1,7 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/rust
 {
-	"name": "AtCoder-Rust-1.70.0",
+	"name": "AtCoder-Rust-1.89.0",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"build": {
 		"dockerfile": "Dockerfile"
@@ -19,7 +19,7 @@
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	"features": {
 		"ghcr.io/devcontainers/features/rust:1": {
-			"version": "1.70.0",
+			"version": "1.89.0",
 			"profile": "default"
 		}
 	},
@@ -35,7 +35,7 @@
 	"customizations": {
 		"vscode": {
 				"extensions": [
-						"rust-lang.rust-analyzer@0.3.2319",
+						"rust-lang.rust-analyzer",
 						"tamasfe.even-better-toml",
 						"vadimcn.vscode-lldb"
 				]
