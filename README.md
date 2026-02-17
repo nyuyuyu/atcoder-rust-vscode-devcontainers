@@ -2,6 +2,10 @@
 
 Template for VS Code Dev Containers to try [AtCoder](https://atcoder.jp/) in Rust 🦀
 
+First, [create a new repository based on this one](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template). You can clone the generated repository locally and [open it in Visual Studio Code](https://code.visualstudio.com/docs/devcontainers/containers) or open it in [Github Codespaces](https://github.com/features/codespaces).
+
+If you cannot find the workspace in [Github Codespaces](https://github.com/features/codespaces), manually set `/workspaces/<YOUR_REPOSITORY_NAME>`.
+
 
 ## How to try?
 
