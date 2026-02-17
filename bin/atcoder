@@ -30,6 +30,26 @@ case "$CARGO_COMPETE_SUBCOMMAND" in
         #   ref: https://github.com/qryxip/cargo-compete/pull/198
         #
         find "$__ATCODER_WORKSPACE_DIR"/*/testcases -type d -empty -exec touch {}/.gitkeep \;
+
+        #
+        # Warm-up each case
+        #
+        shift
+        for arg in "$@"; do
+          case "$arg" in
+          -*)
+            continue
+            ;;
+          *)
+            (
+              [[ -n "$arg" ]] && \
+              cd "$arg" && \
+              find ./src/bin -name '*.rs' -exec cargo compete test --src {} \; \
+            ) > /dev/null 2>&1 &
+            break
+            ;;
+          esac
+        done
         ;;
     *)
         cargo compete "$@"
